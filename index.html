@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUT RI ke-80 | RT 02 RW 07</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --galaxy-dark: #242858;
+            --galaxy-blue: #003366;
+            --galaxy-light: #0099ff;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--galaxy-dark);
+            color: white;
+            background-image: 
+                radial-gradient(ellipse at 20% 20%, rgba(0, 80, 120, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(0, 40, 80, 0.3) 0%, transparent 50%);
+        }
+        .galaxy-card {
+            background: rgba(0, 40, 80, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 153, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .galaxy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+            border-color: rgba(0, 153, 255, 0.5);
+        }
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        .twinkle {
+            animation: twinkle 3s infinite alternate;
+        }
+        @keyframes twinkle {
+            0% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        .shooting-star {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(to right, transparent, white);
+            animation: shooting 3s linear infinite;
+        }
+        @keyframes shooting {
+            0% { transform: translateX(0) translateY(0); opacity: 0; }
+            20% { opacity: 1; }
+            100% { transform: translateX(500px) translateY(150px); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="relative overflow-x-hidden">
+   
+    <div id="stars-container" class="fixed inset-0 z-0 pointer-events-none"></div>
+    
+    
+    <header class="relative z-10 border-b border-blue-900">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold text-blue-400 font-montserrat">RT 02 RW 07</h1>
+                <p class="text-sm text-blue-300">Komunitas Karangtaruna</p>
+            </div>
+            <div class="bg-blue-900 text-blue-300 px-4 py-1 rounded-full">
+                <span class="font-bold">80</span> Tahun Merdeka
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="relative min-h-[80vh] flex items-center">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-900 rounded-full filter blur-[80px] opacity-30"></div>
+            <div class="absolute bottom-3/3 right-1/4 w-72 h-72 bg-indigo-900 rounded-full filter blur-[90px] opacity-20"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-15 py-20">
+            <div class="floating mb-10 inline-block p-4 bg-blue-900 bg-opacity-30 rounded-full">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-3 border-blue-300 border-opacity-50 mx-auto">
+                    <img src="png-clipart-yellow-and-red-karang-taruna-logo-karang-taruna-logo-organization-karang-taruna-cdr-logo-thumbnail-removebg-preview.png" alt="Logo RT 02 RW 07" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 font-montserrat text-white">
+                <span class="text-blue-400">DIRGAHAYU</span>
+                <span class="text-white">RI KE-80</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-blue-200">
+                "Pulih Lebih Cepat, Bangkit Lebih Kuat"
+                <br>
+                <span class="text-white font-semibold">17 Agustus 2025</span>
+            </p>
+            
+            <a href="#dokumentasi" class="inline-block px-8 py-3 bg-gradient-to-r from-blue-700 to-blue-500 text-white rounded-full font-bold hover:shadow-lg hover:shadow-blue-900/30 transition-all duration-300">
+                LIHAT DOKUMENTASI
+            </a>
+        </div>
+    </section>
+
+  
+    <section class="relative py-16 z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center font-montserrat text-white">
+                KEGIATAN <span class="text-blue-400">RT 02 RW 07</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+
+
+                <div class="galaxy-card rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-900 to-blue-700 relative overflow-hidden">
+                        <img src="kebersamaanall (1).jpeg" alt="kebersamaan RT2 RW07" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-30"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">kebersamaan RT2 RW07</h3>
+                        <p class="text-blue-200">Pelaksanaan kegiatan Malam tirakat 17 Agustus di lingkungan RT 02 RW 07</p>
+                    </div>
+                </div>
+                
+               
+
+
+                <div class="galaxy-card rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-800 to-indigo-900 relative overflow-hidden">
+                        <img src="lomba anak.jpeg" alt="Lomba Anak-Anak" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-30"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Lomba Anak-Anak</h3>
+                        <p class="text-blue-200">Berbagai perlombaan tradisional memeriahkan hari kemerdekaan</p>
+                    </div>
+                </div>
+                
+                
+                <div class="galaxy-card rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-700 to-purple-900 relative overflow-hidden">
+                        <img src="lomba bapak.jpeg" alt="Lomba Bapak-Bapak" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-30"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">Lomba Bapak-Bapak</h3>
+                        <p class="text-blue-200">Berbagai perlombaan tradisional memeriahkan hari kemerdekaan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <section id="dokumentasi" class="relative py-16 z-10 bg-blue-900 bg-opacity-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-gradient-to-r from-blue-900/70 to-blue-800/70 backdrop-blur-sm rounded-2xl p-8 border border-blue-700 border-opacity-50">
+                <h2 class="text-3xl font-bold mb-4 text-center text-white font-montserrat">DOKUMENTASI KEGIATAN</h2>
+                
+                <p class="text-center text-blue-200 mb-8 max-w-xl mx-auto">
+                    Dokumentasi lengkap perayaan HUT RI ke-80 RT 02 RW 07 dapat diakses melalui:
+                </p>
+                
+                <div class="flex justify-center">
+                    <a href="https://drive.google.com/drive/folders/1ovNXf6mgUwLJlVvNbMU-ynleTtp9BLVg" target="_blank" class="flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-black-500 text-white rounded-full font-bold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                        </svg>
+                        BUKA GOOGLE DRIVE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <section class="relative py-16 z-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center font-montserrat text-white">
+                GALERI <span class="text-blue-400">KEGIATAN</span>
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square rounded-lg overflow-hidden border border-blue-900/30 galaxy-card">
+                    <img src="kebersamaanhadiah.jpeg" alt="Momen Kemerdekaan" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden border border-blue-900/30 galaxy-card">
+                    <img src="pembagian hadiah.jpeg" alt="Kebersamaan Warga" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden border border-blue-900/30 galaxy-card">
+                    <img src="pembagianhadiah.jpeg" alt="Lomba-lomba" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="aspect-square rounded-lg overflow-hidden border border-blue-900/30 galaxy-card">
+                    <img src="foto perlombaan.jpeg" alt="Upacara Seremonial" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <footer class="relative py-8 border-t border-blue-900/30 bg-blue-950/50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold text-blue-400">RT 02 RW 07</h3>
+                    <p class="text-sm text-blue-300">Merayakan 80 Tahun Kemerdekaan Indonesia</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    
+                    <a href="https://www.instagram.com/karangtarunart02_pp?igsh=MWpoYjJodHZyOGN2bQ==" class="w-10 h-10 rounded-full bg-blue-900/50 border border-blue-800/70 flex items-center justify-center text-blue-300 hover:bg-blue-800 hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-blue-900/20 text-center text-xs text-blue-400">
+                <p>© 2024 RT 02 RW 07 - Dirgahayu Republik Indonesia ke-80</p>
+                <p class="mt-1">"Bhinneka Tunggal Ika"</p>
+                <p>@yanzewty #Fian</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      
+
+
+        
+        document.addEventListener('DOMContentLoaded'), function() {
+            const container = document.getElementById('stars-container');
+            const starsCount = 150; 
+        }
+           
+            for (let i = 0; i < starsCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'absolute rounded-full bg-white twinkle';
+                
+               //size
+                const size = Math.random() * 3;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                // animasi delay
+                star.style.animationDelay = `${Math.random() * 3}s`;
+                
+                container.appendChild(star);
+            }
+            
+            
+            function createShootingStar() {
+                const shootingStar = document.createElement('div');
+                shootingStar.className = 'shooting-star';}
+                
+             
+              
